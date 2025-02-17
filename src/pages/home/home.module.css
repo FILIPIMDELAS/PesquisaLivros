@@ -1,0 +1,36 @@
+.divSubContent{
+  display: grid;
+  justify-content: center;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 20% 20% 20%;
+  gap: 7%;
+
+  .divContentBooks{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+    padding: 8%;
+    gap: 5px;
+    background-color: var(--colorSecundary);
+    height: 270px;
+
+    & p{
+      display: flex;
+      position: absolute;
+      text-overflow: ellipsis;
+      bottom: 2%;
+    }
+
+    & img{
+      width: 150px;
+    }
+  }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

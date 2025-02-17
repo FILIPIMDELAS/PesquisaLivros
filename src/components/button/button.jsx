@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import style from './button.module.css'
 
-export default function Button({ label, onClick }){
+export default function Button({ clas, label, onClick }){
   return(
-    <button className={`${style.Button}`} onClick={onClick}>{label}</button>
+    <button className={`${style.buttons} ${clas ? style[clas] : ''}`} onClick={onClick}>{label}</button>
   )
 }

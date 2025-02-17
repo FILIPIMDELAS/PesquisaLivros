@@ -1,0 +1,9 @@
+.divButtonIcon{
+  display: flex;
+  align-items: center;
+
+  .iconsBut{
+    display: flex;
+    font-size: .5em;
+  }
+}

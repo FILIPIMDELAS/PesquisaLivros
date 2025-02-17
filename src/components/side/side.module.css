@@ -1,0 +1,8 @@
+.divSide{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}
