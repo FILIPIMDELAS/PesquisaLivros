@@ -23,8 +23,18 @@ export default function Home(){
           })
         )}
       </div>
-      <div>
+      <div className={style.divButtonsFooter}>
         <button onClick={() => {setIndex(1)}}>1</button>
+        <button onClick={() => {setIndex(2)}}>2</button>
+        <button onClick={() => {setIndex(3)}}>3</button>
+        <button onClick={() => {setIndex(4)}}>4</button>
+        <button onClick={() => {setIndex(5)}}>5</button>
+        <button onClick={() => {setIndex(6)}}>6</button>
+        <button onClick={() => {setIndex(7)}}>7</button>
+        <button onClick={() => {setIndex(8)}}>8</button>
+        <button onClick={() => {setIndex(9)}}>9</button>
+        <button onClick={() => {setIndex(10)}}>10</button>
+        <button onClick={() => {setIndex(11)}}>11</button>
       </div>
     </Layout>
   )

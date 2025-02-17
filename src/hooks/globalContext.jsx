@@ -16,6 +16,7 @@ export const GlobalProvider = ({ children }) => {
   const keyAPI = 'AIzaSyDPjpo8Qf31W-3RPd9KskGPXwFGyUQnE1c'
 
   useEffect(() => {
+    setLoading(true)
     const loadCards = async () => {
       try {
         let url = `https://www.googleapis.com/books/v1/volumes?q=${'*'}&startIndex=${index === 1 ? index : 1 + (40 * index) }&maxResults=20&key=${keyAPI}`
@@ -39,7 +40,7 @@ export const GlobalProvider = ({ children }) => {
       }
     }
     loadCards()
-  }, [category])
+  }, [category, index])
 
   return(
     <GlobalContext.Provider value={{ cardItens, setCardItens, loading, setLoading, category, setCategory, index, setIndex }}>
