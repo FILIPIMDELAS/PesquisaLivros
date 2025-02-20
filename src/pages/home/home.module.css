@@ -17,7 +17,7 @@
     padding: 8%;
     gap: 5px;
     background-color: var(--colorSecundary);
-    height: 270px;
+    height: calc(50px + 70%);
 
     & p{
       display: flex;
@@ -27,7 +27,7 @@
     }
 
     & img{
-      width: 150px;
+      width: 60%;
     }
   }
 }

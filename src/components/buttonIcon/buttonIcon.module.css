@@ -1,9 +1,48 @@
 .divButtonIcon{
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
   .iconsBut{
     display: flex;
-    font-size: .5em;
+    width: .8em;
+    transform: rotate(270deg);
+    animation-duration: .5s;
+    animation-name: deselectIconAnimation;
+  }
+
+  .iconsSelect{
+    animation-duration: .5s;
+    animation-name: selectIconAnimation;
+    transform: rotate(360deg);
+  }
+
+  .iconsKart{
+    font-size: .8em;
+    transform: rotate(360deg);
+  }
+}
+
+.divButtonIcon:hover .iconsBut{
+  scale: 1.15;
+  color: brown;
+}
+
+@keyframes selectIconAnimation {
+  from {
+    transform: rotate(270deg)
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes deselectIconAnimation {
+  from {
+    transform: rotate(360deg)
+  }
+  to{
+    transform: rotate(270deg);
   }
 }
