@@ -1,0 +1,43 @@
+.divContentAllCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .divContentCardCEP{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--colorSecundary);
+    width: 50%;
+    height: 70%;
+    border-radius: 10px 0px 0px 10px;
+
+
+    .divContentItensCard{
+      display: flex;
+      height: 70%;
+      padding: 10px;
+    }
+
+    .divCEPInfo{
+      display: flex;
+      height: 30%;
+      padding: 10px;
+      border: 2px solid var(--colorSecundary);
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  .divResumeValue{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--colorSecundary);
+    border-left: none;
+    width: 30%;
+    height: 70%;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
